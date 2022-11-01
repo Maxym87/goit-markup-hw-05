@@ -269,6 +269,14 @@ min-width: 216px;
             margin-bottom: 50px;
     }
 
+    .projects-thumb-text{
+        font-weight: 700;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+    }
+
     /* ------------TEAM---------- */
     .team{
         background: var(--backgrounds-team-color)
@@ -568,6 +576,8 @@ margin-bottom: 4px;}
         color: var(--main-text-color);
 }
 
+        /* ------------BACKDROP-------- */
+
 .backdrop {
     top:0;
     width: 100%;
@@ -600,4 +610,10 @@ background: #FFFFFF;
     display: flex;
 align-items: center;
 justify-content: center;
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
