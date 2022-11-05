@@ -18,6 +18,8 @@
 --portfolio-btn-background-color: #F5F4FA;
 --porfolio-btn-active-color:#FFFFFF;
 --accent-color:#2196F3;
+--main-trans-duration: 250ms;
+--main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 p,
@@ -131,6 +133,9 @@ list-style: none;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-link-color);
+    transition-property: color;
+    transition-duration: var(--main-trans-duration);
+    transition-timing-function: var(--main-trans-timing-func);
 }
 
 .current::after {
@@ -221,13 +226,15 @@ background: var(--hero-btn-background-color);
 margin: 0 auto;
 padding: 10px 32px;
 min-width: 216px;
+transition-property: background-color, box-shadow;
+    transition-duration: var(--main-trans-duration);
+    transition-timing-function: var(--main-trans-timing-func);
 }
 
 .hero-btn:hover,
 .hero-btn:focus{
-    background: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
         /* ------------ADVANTAGE----------- */
@@ -455,6 +462,9 @@ flex-basis: calc((100% - 150px) / 6);
             font-style: normal;
             line-height: 1.71;
             color: var(--address-map-color);
+            transition-property: color;
+                transition-duration: var(--main-trans-duration);
+                transition-timing-function: var(--main-trans-timing-func);
         }
         .address-map:hover,
         .address-map:focus{
@@ -470,6 +480,9 @@ flex-basis: calc((100% - 150px) / 6);
             font-style: normal;
             line-height: 1.71;
             color: rgba(255, 255, 255, 0.6);
+            transition-property: color;
+                transition-duration: var(--main-trans-duration);
+                transition-timing-function: var(--main-trans-timing-func);
         }
 .address-link:hover,
 .address-link:focus{
